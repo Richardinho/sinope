@@ -1,8 +1,10 @@
-var assert = require('assert');
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
-    });
+import assert from 'assert';
+
+import Foo from '../src/foo';
+
+describe('Foo.prototype.bar()', function() {
+  it('should return "this is bar"', function() {
+    const foo = new Foo();
+    assert.equal(foo.bar(), 'this is bar');
   });
 });
