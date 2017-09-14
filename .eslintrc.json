@@ -9,6 +9,8 @@
         "sourceType": "module"
     },
     "rules": {
+        "for-direction" : 2,
+        "getter-return" : 2,
         "indent": [
             "error",
             "tab"
@@ -17,6 +19,9 @@
             "error",
             "unix"
         ],
+        "no-await-in-loop": 2,
+        "no-extra-parens" : 2,
+        "no-prototype-builtins": 2,
         "quotes": [
             "error",
             "single"
