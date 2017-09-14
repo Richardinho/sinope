@@ -8,12 +8,13 @@
     "parserOptions": {
         "sourceType": "module"
     },
+    "parser": "babel-eslint",
     "rules": {
         "for-direction" : 2,
         "getter-return" : 2,
         "indent": [
             "error",
-            "tab"
+            2
         ],
         "linebreak-style": [
             "error",

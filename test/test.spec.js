@@ -1,10 +1,15 @@
 import assert from 'assert';
 
-import Foo from '../src/foo';
+import Injector from '../src/injector';
 
-describe('Foo.prototype.bar()', function() {
-  it('should return "this is bar"', function() {
-    const foo = new Foo();
-    assert.equal(foo.bar(), 'this is bar');
+describe('Injector', function() {
+  let injector;
+  beforeEach(function () {
+    injector = new Injector();
+  });
+  describe('register()', function () {
+    it('should....', function() {
+      assert.equal(injector.register(), true);
+    });
   });
 });
