@@ -1,19 +1,25 @@
-import Injector from '../injector';
+import Injector, { INSTANCE } from '../injector';
 import Foo from './foo';
-import Bar from './bar';
+import Bar, { Moo } from './bar';
 
 let injector = new Injector();
 
 injector.register({
   key: Foo,
   provider: Foo,
-  mode: Injector.INSTANCE
+  mode: INSTANCE
 });
 
 injector.register({
   key: Bar,
   provider: Bar,
-  mode: Injector.INSTANCE
+  mode: INSTANCE
+});
+
+injector.register({
+  key: Moo,
+  provider: Moo,
+  mode: INSTANCE
 });
 
 const foo = injector.get(Foo);

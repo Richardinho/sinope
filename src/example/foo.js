@@ -8,6 +8,5 @@ export default class Foo {
   }
 
   lala() {
-    alert(this.bar.blah());
   }
 }

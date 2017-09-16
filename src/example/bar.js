@@ -1,9 +1,21 @@
+import { Inject } from '../injector';
 
-export default class Bar {
+export class Moo {
   constructor() {
   }
 
   blah() {
-    return 'blah';
+    return 'moooooooooo blhlhlhl';
+  }
+}
+
+@Inject(Moo)
+export default class Bar {
+  constructor(moo) {
+    this.moo = moo;
+  }
+
+  blah() {
+    return this.moo.blah();
   }
 }
